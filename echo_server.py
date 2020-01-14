@@ -16,6 +16,7 @@ def main():
             full_data = conn.recv(BUFFER_SIZE)
             print("Connected by", addr)
             time.sleep(0.5)
+            print("Sending", full_data)
             conn.sendall(full_data)
             conn.close()
         

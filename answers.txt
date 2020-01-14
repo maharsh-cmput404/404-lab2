@@ -1,0 +1,4 @@
+1) socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+2) Server socket waits for data/connections and a client socket sends data/initializes connections
+3) 
+4) We get the IP address and the PORT
