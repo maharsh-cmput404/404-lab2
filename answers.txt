@@ -2,3 +2,5 @@
 2) Server socket waits for data/connections and a client socket sends data/initializes connections
 3) 
 4) We get the IP address and the PORT
+5) The full data including the headers + payload is returned
+6)
