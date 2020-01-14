@@ -1,6 +1,8 @@
 1) socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 2) Server socket waits for data/connections and a client socket sends data/initializes connections
-3) 
-4) We get the IP address and the PORT
+3) We can instruct the OS to let us use the same port by passing in the 
+socket.SO_REUSEADDR flag before binding. This helps in certain edge cases 
+and will allow a new program to rebind to the same IP/port combination
+4) We get the IP address and the PORT.
 5) The full data including the headers + payload is returned
-6)
+6) https://github.com/maharshmellow/404-lab2
