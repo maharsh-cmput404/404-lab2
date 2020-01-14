@@ -1,4 +1,5 @@
 import socket 
+from multiprocessing import Pool
 
 HOST = "localhost"
 PORT = 8001
@@ -21,6 +22,8 @@ def connect(addr):
         s.close()
 
 def main():
-    connect(("127.0.0.1", 8001))
+    address = [("127.0.0.1", 8001)]
+    with Pool() as p:
+        p.map(connect, address * 10)    # create a pool with 10 threads
 
 main()
